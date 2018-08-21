@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Dimension by HTML5 UP",
-    author: "Hunter Chang",
-    description: "A Gatsby.js Starter based on Dimension by HTML5 UP"
+    title: "Beatriz Montanhaur",
+    author: "Lucas Gouvêa",
+    description: "Portfolio desenvolvido em cima do template Diamond p/ Gatsbyjs"
   },
   pathPrefix: '/',
   plugins: [
@@ -11,6 +11,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/posts`,
         name: "posts",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `downloads`,
+        path: `${__dirname}/src/downloads`,
       },
     },
     {

@@ -13,7 +13,7 @@ const Header = (props) => (
         </div>
         <nav>
             <ul>
-                <li><a href="../downloads/curriculum.txt" download>Currículo</a></li>
+                <li><a href="javascript:;" onClick={() => fetch('/downloads/curriculum.txt')}>Currículo</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('portfolio')}}>Portfolio</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('sobre')}}>Sobre</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contato')}}>Contato</a></li>
