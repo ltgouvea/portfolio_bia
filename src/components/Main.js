@@ -33,7 +33,7 @@ class Main extends React.Component {
       'message': rawData.message.value,
     };
 
-    window.open('mailto:lucas.fim@gmail.com?subject=Contato Portfolio&body='+formData.message);
+    window.open('mailto:beatrizmontanhaur@gmail.com?subject=Contato Portfolio&body='+formData.message);
   }
 
   render() {
