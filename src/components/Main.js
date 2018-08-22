@@ -24,6 +24,18 @@ import rotoscopia_amanara from '../images/portfolio/rotoscopia_amanara.png'
 import triagem from '../images/portfolio/triagem.jpg'
 
 class Main extends React.Component {
+
+  handleSubmit(event) {
+    let rawData = event.target.elements;
+    let formData = {
+      'name': rawData.name.value,
+      'email': rawData.email.value,
+      'message': rawData.message.value,
+    };
+
+    window.open('mailto:lucas.fim@gmail.com?subject=Contato Portfolio&body='+formData.message);
+  }
+
   render() {
 
     let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
@@ -65,7 +77,7 @@ class Main extends React.Component {
 
         <article id="contato" className={`${this.props.article === 'contato' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contato</h2>
-          <form method="post" action="#">
+          <form onSubmit={this.handleSubmit}>
             <div className="field half first">
               <label htmlFor="name">Nome</label>
               <input type="text" name="name" id="name" />
@@ -84,6 +96,7 @@ class Main extends React.Component {
             </ul>
           </form>
           <ul className="icons">
+            <li><a href="https://behance.net/biadm" className="icon fa-behance"><span className="label">Behance</span></a></li>
             <li><a href="https://facebook.com/beatriz.montanhaur" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
             <li><a href="https://instagram.com/bia_dm" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
             <li><a href="https://youtube.com/user/1biadm" className="icon fa-youtube"><span className="label">Youtube</span></a></li>
