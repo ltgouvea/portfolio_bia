@@ -71,7 +71,20 @@ class Main extends React.Component {
 
         <article id="videos" className={`${this.props.article === 'videos' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Videos</h2>
+					<h3>Lyric Video da música Goodbye - Lysergic Thoughts (2017).  Stop motion em massinha, criação, storyboard, animação e composição final</h3>
+					<iframe width="1000" height="720" src="https://www.youtube.com/embed/fQMHfgPFcsw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<h3>Realização do evento “CineRecreio” oficinas de animação para o CEVAC (Centro de Valorização da Criança) da cidade de Bauru (2017)</h3>
+					<iframe width="1000" height="720" src="https://www.youtube.com/embed/5YxSUv8Xscs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<h3>Amanara (2016). Roteiro e Captação de Som</h3>
 					<iframe width="1000" height="720" src="https://www.youtube.com/embed/417ZGRfgaZk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<h3>Amanara (2016). Rotoscopia feita no photoshop</h3>
+					<iframe width="1000" height="720" src="https://www.youtube.com/embed/nnTOXRDJ15g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<h3>Cítrica (2017). Captação de áudio e câmera adicional</h3>
+					<iframe src="https://player.vimeo.com/video/208545785" width="1000" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<h3>Documentário A Terra é Nossa! (2015). Operação de câmera</h3>
+					<iframe width="1000" height="720" src="https://www.youtube.com/embed/es1gzJIcjkk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<h3>Chocolate (2014). Roteiro e Direção</h3>
+					<iframe width="1000" height="720" src="https://www.youtube.com/embed/wenIV4Ht_zk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					{close}
         </article>
 
