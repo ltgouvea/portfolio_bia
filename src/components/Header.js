@@ -15,6 +15,7 @@ const Header = (props) => (
             <ul>
                 <li><a href="/links.txt" download="CV.txt">Currículo</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('portfolio')}}>Portfolio</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('videos')}}>Videos</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('sobre')}}>Sobre</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contato')}}>Contato</a></li>
             </ul>
