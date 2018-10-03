@@ -58,7 +58,6 @@ class Main extends React.Component {
 				<span className="image main"> <img src={doc2}/>  </span>
 				<span className="image main"> <img src={doc}/>  </span>
 				<span className="image main"> <img src={em_produção_chique_demais}/>  </span>
-				<span className="image main"> <img src={fotinha_minha_trampano}/>  </span>
 				<span className="image main"> <img src={fundoclaro}/>  </span>
 				<span className="image main"> <img src={imagem_final}/>  </span>
 				<span className="image main"> <img src={img_4120_tentei}/>  </span>
@@ -90,7 +89,8 @@ class Main extends React.Component {
 
         <article id="sobre" className={`${this.props.article === 'sobre' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Sobre</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+          <span className="image small"> <img src={fotinha_minha_trampano}/>  </span>
+          <p className="bio">Formada em <strong>Comunicação Social - Radialismo </strong>pela UNESP de Bauru. Participei do projeto de extensão Panorama Unesp como editora de áudio e durante a graduação tive contato com diversas áreas da produção audiovisual como: criação de roteiro, direção, captação de áudio, produção e edição de curtas-metragens e programas de tv, Período em que também explorei técnicas de animação mais tradicionais como Stop Motion e Rotoscopia. Experiência em produção de videoclipes e atualmente trabalho como freelancer com animação 2D.</p>
           {close}
         </article>
 
