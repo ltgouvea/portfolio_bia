@@ -43,54 +43,54 @@ class Main extends React.Component {
     return (
       <div id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
 
-	    <article id="portfolio" className={`${this.props.article === 'portfolio' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-				<h2 className="major">Portfolio</h2>
-				<span className="image main"> <img src={img_20170731120537}/> </span>
-				<span className="image main"> <img src={as_brumas_vinheta_cg2}/>  </span>
-				<span className="image main"> <img src={as_brumas_vinheta_cg}/>  </span>
-				<span className="image main"> <img src={bia_na_facu2_12_05_14}/>  </span>
-				<span className="image main"> <img src={bia_na_facu3_12_05_14}/>  </span>
-				<span className="image main"> <img src={capa3}/>  </span>
-				<span className="image main"> <img src={chocolate}/>  </span>
-				<span className="image main"> <img src={cítrica}/>  </span>
-				<span className="image main"> <img src={clique_aki}/>  </span>
-				<span className="image main"> <img src={diluna2}/>  </span>
-				<span className="image main"> <img src={doc2}/>  </span>
-				<span className="image main"> <img src={doc}/>  </span>
-				<span className="image main"> <img src={em_produção_chique_demais}/>  </span>
-				<span className="image main"> <img src={fundoclaro}/>  </span>
-				<span className="image main"> <img src={imagem_final}/>  </span>
-				<span className="image main"> <img src={img_4120_tentei}/>  </span>
-				<span className="image main"> <img src={oficina}/>  </span>
-				<span className="image main"> <img src={robes}/>  </span>
-				<span className="image main"> <img src={rotoscopia_amanara}/>  </span>
-				<span className="image main"> <img src={triagem}/>  </span>
-	    {close}
-	    </article>
+      <article id="portfolio" className={`${this.props.article === 'portfolio' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <h2 className="major">Portfolio</h2>
+        <span className="image main"> <img src={img_20170731120537}/> </span>
+        <span className="image main"> <img src={as_brumas_vinheta_cg2}/>  </span>
+        <span className="image main"> <img src={as_brumas_vinheta_cg}/>  </span>
+        <span className="image main"> <img src={bia_na_facu2_12_05_14}/>  </span>
+        <span className="image main"> <img src={bia_na_facu3_12_05_14}/>  </span>
+        <span className="image main"> <img src={capa3}/>  </span>
+        <span className="image main"> <img src={chocolate}/>  </span>
+        <span className="image main"> <img src={cítrica}/>  </span>
+        <span className="image main"> <img src={clique_aki}/>  </span>
+        <span className="image main"> <img src={diluna2}/>  </span>
+        <span className="image main"> <img src={doc2}/>  </span>
+        <span className="image main"> <img src={doc}/>  </span>
+        <span className="image main"> <img src={em_produção_chique_demais}/>  </span>
+        <span className="image main"> <img src={fundoclaro}/>  </span>
+        <span className="image main"> <img src={imagem_final}/>  </span>
+        <span className="image main"> <img src={img_4120_tentei}/>  </span>
+        <span className="image main"> <img src={oficina}/>  </span>
+        <span className="image main"> <img src={robes}/>  </span>
+        <span className="image main"> <img src={rotoscopia_amanara}/>  </span>
+        <span className="image main"> <img src={triagem}/>  </span>
+      {close}
+      </article>
 
         <article id="videos" className={`${this.props.article === 'videos' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Videos</h2>
-					<p className="video-description">Lyric Video da música Goodbye - Lysergic Thoughts (2017).  Stop motion em massinha, criação, storyboard, animação e composição final</p>
-					<iframe width="1000" height="720" src="https://www.youtube.com/embed/fQMHfgPFcsw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					<p className="video-description">Realização do evento “CineRecreio” oficinas de animação para o CEVAC (Centro de Valorização da Criança) da cidade de Bauru (2017)</p>
-					<iframe width="1000" height="720" src="https://www.youtube.com/embed/5YxSUv8Xscs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					<p className="video-description">Amanara (2016). Roteiro e Captação de Som</p>
-					<iframe width="1000" height="720" src="https://www.youtube.com/embed/417ZGRfgaZk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					<p className="video-description">Amanara (2016). Rotoscopia feita no photoshop</p>
-					<iframe width="1000" height="720" src="https://www.youtube.com/embed/nnTOXRDJ15g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					<p className="video-description">Cítrica (2017). Captação de áudio e câmera adicional</p>
-					<iframe src="https://player.vimeo.com/video/208545785" width="1000" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-					<p className="video-description">Documentário A Terra é Nossa! (2015). Operação de câmera</p>
-					<iframe width="1000" height="720" src="https://www.youtube.com/embed/es1gzJIcjkk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					<p className="video-description">Chocolate (2014). Roteiro e Direção</p>
-					<iframe width="1000" height="720" src="https://www.youtube.com/embed/wenIV4Ht_zk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					{close}
+          <p className="video-description">Lyric Video da música Goodbye - Lysergic Thoughts (2017).  Stop motion em massinha, criação, storyboard, animação e composição final</p>
+          <iframe width="1000" height="720" src="https://www.youtube.com/embed/fQMHfgPFcsw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p className="video-description">Realização do evento “CineRecreio” oficinas de animação para o CEVAC (Centro de Valorização da Criança) da cidade de Bauru (2017)</p>
+          <iframe width="1000" height="720" src="https://www.youtube.com/embed/5YxSUv8Xscs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p className="video-description">Amanara (2016). Roteiro e Captação de Som</p>
+          <iframe width="1000" height="720" src="https://www.youtube.com/embed/417ZGRfgaZk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p className="video-description">Amanara (2016). Rotoscopia feita no photoshop</p>
+          <iframe width="1000" height="720" src="https://www.youtube.com/embed/nnTOXRDJ15g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p className="video-description">Cítrica (2017). Captação de áudio e câmera adicional</p>
+          <iframe src="https://player.vimeo.com/video/208545785" width="1000" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <p className="video-description">Documentário A Terra é Nossa! (2015). Operação de câmera</p>
+          <iframe width="1000" height="720" src="https://www.youtube.com/embed/es1gzJIcjkk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p className="video-description">Chocolate (2014). Roteiro e Direção</p>
+          <iframe width="1000" height="720" src="https://www.youtube.com/embed/wenIV4Ht_zk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          {close}
         </article>
 
         <article id="sobre" className={`${this.props.article === 'sobre' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Sobre</h2>
           <span className="image small"> <img src={fotinha_minha_trampano}/>  </span>
-          <p className="bio">Formada em <strong>Comunicação Social - Radialismo </strong>pela UNESP de Bauru. Participei do projeto de extensão Panorama Unesp como editora de áudio e durante a graduação tive contato com diversas áreas da produção audiovisual como: criação de roteiro, direção, captação de áudio, produção e edição de curtas-metragens e programas de tv, Período em que também explorei técnicas de animação mais tradicionais como Stop Motion e Rotoscopia. Experiência em produção de videoclipes e atualmente trabalho como freelancer com animação 2D.</p>
+          <p className="bio">Formada em <strong>Comunicação Social - Radialismo </strong>pela UNESP de Bauru. Participei do projeto de extensão Panorama Unesp como editora de áudio e durante a graduação tive contato com diversas áreas da produção audiovisual como: criação de roteiro, direção, captação de áudio, produção e edição de curtas-metragens e programas de tv, período em que também explorei técnicas de animação mais tradicionais como Stop Motion e Rotoscopia. Experiência em produção de videoclipes e atualmente trabalho como freelancer com animação 2D.</p>
           {close}
         </article>
 
