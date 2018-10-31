@@ -110,8 +110,35 @@
   }
   .video-description {
     font-size:1.5rem;
-    margin-top: 3.5rem;
-    margin-bottom: 3.5rem;
+    margin-top: 2em;
     text-align: center;
+  }
+
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: 40rem) {
+      flex-direction: column;
+      img {
+        width: 18rem;
+        height: 18rem;
+      }
+    }
+  }
+
+  .videos-container {
+    display: flex;
+    flex-direction: column;
+
+    iframe {
+      @media only screen and (max-width: 40rem) {
+        width:100%;
+        height: 20rem;
+      }
+      @media only screen and (max-width: 60rem) {
+        width:100%;
+        height: 20rem;
+      }
+    }
   }
 }

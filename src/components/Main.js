@@ -70,32 +70,43 @@ class Main extends React.Component {
 
         <article id="videos" className={`${this.props.article === 'videos' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Videos</h2>
-          <p className="video-description">Lyric Video da música Goodbye - Lysergic Thoughts (2017).  Stop motion em massinha, criação, storyboard, animação e composição final</p>
-          <iframe width="1000" height="720" src="https://www.youtube.com/embed/fQMHfgPFcsw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <p className="video-description">Realização do evento “CineRecreio” oficinas de animação para o CEVAC (Centro de Valorização da Criança) da cidade de Bauru (2017)</p>
-          <iframe width="1000" height="720" src="https://www.youtube.com/embed/5YxSUv8Xscs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <p className="video-description">Amanara (2016). Roteiro e Captação de Som</p>
-          <iframe width="1000" height="720" src="https://www.youtube.com/embed/417ZGRfgaZk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <p className="video-description">Amanara (2016). Rotoscopia feita no photoshop</p>
-          <iframe width="1000" height="720" src="https://www.youtube.com/embed/nnTOXRDJ15g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <p className="video-description">Cítrica (2017). Captação de áudio e câmera adicional</p>
-          <iframe src="https://player.vimeo.com/video/208545785" width="1000" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          <p className="video-description">Documentário A Terra é Nossa! (2015). Operação de câmera</p>
-          <iframe width="1000" height="720" src="https://www.youtube.com/embed/es1gzJIcjkk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <p className="video-description">Chocolate (2014). Roteiro e Direção</p>
-          <iframe width="1000" height="720" src="https://www.youtube.com/embed/wenIV4Ht_zk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div className="videos-container">
+            <p className="video-description">Lyric Video da música Goodbye - Lysergic Thoughts (2017).  Stop motion em massinha, criação, storyboard, animação e composição final</p>
+            <iframe width="1000" height="720" src="https://www.youtube.com/embed/fQMHfgPFcsw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p className="video-description">Realização do evento “CineRecreio” oficinas de animação para o CEVAC (Centro de Valorização da Criança) da cidade de Bauru (2017)</p>
+            <iframe width="1000" height="720" src="https://www.youtube.com/embed/5YxSUv8Xscs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p className="video-description">Amanara (2016). Roteiro e Captação de Som</p>
+            <iframe width="1000" height="720" src="https://www.youtube.com/embed/417ZGRfgaZk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p className="video-description">Amanara (2016). Rotoscopia feita no photoshop</p>
+            <iframe width="1000" height="720" src="https://www.youtube.com/embed/nnTOXRDJ15g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p className="video-description">Cítrica (2017). Captação de áudio e câmera adicional</p>
+            <iframe src="https://player.vimeo.com/video/208545785" width="1000" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <p className="video-description">Documentário A Terra é Nossa! (2015). Operação de câmera</p>
+            <iframe width="1000" height="720" src="https://www.youtube.com/embed/es1gzJIcjkk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <p className="video-description">Chocolate (2014). Roteiro e Direção</p>
+            <iframe width="1000" height="720" src="https://www.youtube.com/embed/wenIV4Ht_zk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
           {close}
         </article>
 
         <article id="sobre" className={`${this.props.article === 'sobre' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Sobre</h2>
-          <span className="image small"> <img src={fotinha_minha_trampano}/>  </span>
-          <p className="bio">Formada em <strong>Comunicação Social - Radialismo </strong>pela UNESP de Bauru. Participei do projeto de extensão Panorama Unesp como editora de áudio e durante a graduação tive contato com diversas áreas da produção audiovisual como: criação de roteiro, direção, captação de áudio, produção e edição de curtas-metragens e programas de tv, período em que também explorei técnicas de animação mais tradicionais como Stop Motion e Rotoscopia. Experiência em produção de videoclipes e atualmente trabalho como freelancer com animação 2D.</p>
+            <div className="about-container">
+                <span> <img className="image small" src={fotinha_minha_trampano}/>  </span>
+                <p className="bio text-right">Formada em <strong>Comunicação Social - Radialismo </strong>pela UNESP de Bauru. Participei do projeto de extensão Panorama Unesp como editora de áudio e durante a graduação tive contato com diversas áreas da produção audiovisual como: criação de roteiro, direção, captação de áudio, produção e edição de curtas-metragens e programas de tv, período em que também explorei técnicas de animação mais tradicionais como Stop Motion e Rotoscopia. Experiência em produção de videoclipes e atualmente trabalho como freelancer com animação 2D.</p>
+            </div>
           {close}
         </article>
 
         <article id="contato" className={`${this.props.article === 'contato' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Contato</h2>
+          <ul className="icons">
+            <li><a href="https://behance.net/biadm" className="icon fa-behance"><span className="label">Behance</span></a></li>
+            <li><a href="https://facebook.com/beatriz.montanhaur" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
+            <li><a href="https://instagram.com/bia_dm" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
+            <li><a href="https://youtube.com/user/1biadm" className="icon fa-youtube"><span className="label">Youtube</span></a></li>
+            <li><a href="https://www.linkedin.com/in/beatriz-montanhaur-bb2397112/" className="icon fa-linkedin"><span className="label">LinkedIn</span></a></li>
+          </ul>
           <form onSubmit={this.handleSubmit}>
             <div className="field half first">
               <label htmlFor="name">Nome</label>
@@ -114,12 +125,6 @@ class Main extends React.Component {
               <li><input type="reset" value="Limpar" /></li>
             </ul>
           </form>
-          <ul className="icons">
-            <li><a href="https://behance.net/biadm" className="icon fa-behance"><span className="label">Behance</span></a></li>
-            <li><a href="https://facebook.com/beatriz.montanhaur" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-            <li><a href="https://instagram.com/bia_dm" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-            <li><a href="https://youtube.com/user/1biadm" className="icon fa-youtube"><span className="label">Youtube</span></a></li>
-          </ul>
           {close}
         </article>
 
