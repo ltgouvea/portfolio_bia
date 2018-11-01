@@ -45,26 +45,43 @@ class Main extends React.Component {
 
       <article id="portfolio" className={`${this.props.article === 'portfolio' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
         <h2 className="major">Portfolio</h2>
-        <span className="image main"> <img src={img_20170731120537}/> </span>
-        <span className="image main"> <img src={as_brumas_vinheta_cg2}/>  </span>
-        <span className="image main"> <img src={as_brumas_vinheta_cg}/>  </span>
-        <span className="image main"> <img src={bia_na_facu2_12_05_14}/>  </span>
-        <span className="image main"> <img src={bia_na_facu3_12_05_14}/>  </span>
-        <span className="image main"> <img src={capa3}/>  </span>
-        <span className="image main"> <img src={chocolate}/>  </span>
-        <span className="image main"> <img src={cítrica}/>  </span>
-        <span className="image main"> <img src={clique_aki}/>  </span>
-        <span className="image main"> <img src={diluna2}/>  </span>
-        <span className="image main"> <img src={doc2}/>  </span>
-        <span className="image main"> <img src={doc}/>  </span>
-        <span className="image main"> <img src={em_produção_chique_demais}/>  </span>
-        <span className="image main"> <img src={fundoclaro}/>  </span>
-        <span className="image main"> <img src={imagem_final}/>  </span>
-        <span className="image main"> <img src={img_4120_tentei}/>  </span>
-        <span className="image main"> <img src={oficina}/>  </span>
-        <span className="image main"> <img src={robes}/>  </span>
-        <span className="image main"> <img src={rotoscopia_amanara}/>  </span>
-        <span className="image main"> <img src={triagem}/>  </span>
+        <div className="albums-container">
+          <div className="album-card-container">
+            <span className="image main album-container"> <a href="#"><img src={img_20170731120537}/></a> </span>
+            <span className="image main album-container"> <a href="#"><img src={as_brumas_vinheta_cg2}/></a>  </span>
+            <span className="image main album-container"> <a href="#"><img src={as_brumas_vinheta_cg}/></a>  </span>
+          </div>
+          <div className="album-card-container">
+            <span className="image main album-container"> <a href="#"><img src={bia_na_facu2_12_05_14}/></a>  </span>
+            <span className="image main album-container"> <a href="#"><img src={bia_na_facu3_12_05_14}/></a>  </span>
+            <span className="image main album-container"> <a href="#"><img src={capa3}/></a>  </span>
+          </div>
+          <div className="album-card-container">
+            <span className="image main album-container"> <a href="#"><img src={chocolate}/></a>  </span>
+            <span className="image main album-container"> <a href="#"><img src={cítrica}/></a>  </span>
+            <span className="image main album-container"> <a href="#"><img src={clique_aki}/></a>  </span>
+          </div>
+          <div className="album-card-container">
+            <span className="image main album-container"> <a href="#"><img src={diluna2}/></a>  </span>
+            <span className="image main album-container"> <a href="#"><img src={doc2}/></a>  </span>
+            <span className="image main album-container"> <a href="#"><img src={doc}/></a>  </span>
+          </div>
+          <div className="album-card-container">
+            <span className="image main album-container"> <a href="#"><img src={em_produção_chique_demais}/></a>  </span>
+            <span className="image main album-container"> <a href="#"><img src={fundoclaro}/></a>  </span>
+            <span className="image main album-container"> <a href="#"><img src={imagem_final}/></a>  </span>
+          </div>
+          <div className="album-card-container">
+            <span className="image main album-container"> <a href="#"><img src={img_4120_tentei}/></a>  </span>
+            <span className="image main album-container"> <a href="#"><img src={oficina}/></a>  </span>
+            <span className="image main album-container"> <a href="#"><img src={robes}/></a>  </span>
+          </div>
+          <div className="album-card-container">
+            <span className="image main album-container"> <a href="#"><img src={rotoscopia_amanara}/></a>  </span>
+            <span className="image main album-container"> <a href="#"><img src={triagem}/></a>  </span>
+            <span className="image main album-container"> </span>
+          </div>
+        </div>
       {close}
       </article>
 

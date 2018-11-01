@@ -126,6 +126,26 @@
     }
   }
 
+  .bio {
+    font-size: 0.9rem;
+    margin: 3rem 2rem;
+    text-align: justified;
+  }
+
+  .albums-container {
+      display: flex;
+      flex-direction: column;
+  
+  }
+
+  .album-card-container {
+      display: flex;
+  }
+
+  .album-container {
+      margin: .5em .5em;
+  }
+
   .videos-container {
     display: flex;
     flex-direction: column;
