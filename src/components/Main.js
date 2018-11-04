@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
-import "react-responsive-carousel/lib/styles/carousel.min.css"
-import { Carousel } from 'react-responsive-carousel'
 import Link from 'gatsby-link'
 
 import img_20170731120537 from '../images/portfolio/20170731_120537.jpg'
@@ -25,8 +22,19 @@ import oficina from '../images/portfolio/oficina.jpg'
 import robes from '../images/portfolio/robes.png'
 import rotoscopia_amanara from '../images/portfolio/rotoscopia_amanara.png'
 import triagem from '../images/portfolio/triagem.jpg'
+import Cmodal from './Cmodal'
 
 class Main extends React.Component {
+
+  state = { showModal: false };
+
+  showModal = () => {
+    this.setState({ showModal: !this.state.showModal });
+  };
+
+  hideModal = () => {
+    this.setState({ showModal: false });
+  };
 
   handleSubmit(event) {
     let rawData = event.target.elements;
@@ -40,77 +48,79 @@ class Main extends React.Component {
   }
 
   render() {
-
     let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
 
     return (
       <div id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
+      <div className="modal-carousel-container">
+        <Cmodal show={this.state.showModal}></Cmodal>
+      </div>
 
       <article id="portfolio" className={`${this.props.article === 'portfolio' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
         <h2 className="major">Portfolio</h2>
         <div className="albums-container">
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={img_20170731120537}/></a> </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={img_20170731120537}/></a> </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={as_brumas_vinheta_cg2}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={as_brumas_vinheta_cg2}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={as_brumas_vinheta_cg}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={as_brumas_vinheta_cg}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={bia_na_facu2_12_05_14}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={bia_na_facu2_12_05_14}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={bia_na_facu3_12_05_14}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={bia_na_facu3_12_05_14}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={capa3}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={capa3}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={chocolate}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={chocolate}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={cítrica}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={cítrica}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={clique_aki}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={clique_aki}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={diluna2}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={diluna2}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={doc2}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={doc2}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={doc}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={doc}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={em_produção_chique_demais}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={em_produção_chique_demais}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={fundoclaro}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={fundoclaro}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={imagem_final}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={imagem_final}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={img_4120_tentei}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={img_4120_tentei}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={oficina}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={oficina}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={robes}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={robes}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={rotoscopia_amanara}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={rotoscopia_amanara}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={triagem}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={triagem}/></a>  </span>
           </div>
           <div className="image-card">
-              <span className="image main album-container"> <a href="#"><img src={triagem}/></a>  </span>
+              <span className="image main album-container"> <a onClick={this.showModal}><img src={triagem}/></a>  </span>
           </div>
         </div>
       {close}
@@ -177,72 +187,6 @@ class Main extends React.Component {
         </article>
       </div>
     )
-    // <Carousel>
-    //     <div className="image-card">
-    //       <img src={img_20170731120537}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={as_brumas_vinheta_cg2}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={as_brumas_vinheta_cg}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={bia_na_facu2_12_05_14}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={bia_na_facu3_12_05_14}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={capa3}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={chocolate}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={cítrica}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={clique_aki}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={diluna2}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={doc2}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={doc}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={em_produção_chique_demais}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={fundoclaro}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={imagem_final}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={img_4120_tentei}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={oficina}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={robes}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={rotoscopia_amanara}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={triagem}/>
-    //     </div>
-    //     <div className="image-card">
-    //       <img src={triagem}/>
-    //     </div>
-    // </Carousel>
-    // ReactDOM.render(<Carousel />, document.querySelector('carousel'));
   }
 }
 

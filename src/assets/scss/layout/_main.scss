@@ -14,6 +14,7 @@
   @include vendor('justify-content', 'center');
   @include vendor('flex-direction', 'column');
   position: relative;
+  padding: 2rem 4rem;
   max-width: 100%;
   z-index: 3;
   display: none;
@@ -177,5 +178,18 @@
         height: 20rem;
       }
     }
+  }
+
+  .modal-carousel-container {
+  }
+
+  .modal-carousel {
+      width: 50rem;
+      height: 50rem;
+      z-index: 5;
+  }
+
+  .hidden {
+      display: none;
   }
 }

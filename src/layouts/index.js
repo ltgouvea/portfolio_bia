@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
+import moon from '../videos/moon.mp4'
 
 class Template extends React.Component {
   constructor(props) {
@@ -75,6 +76,7 @@ class Template extends React.Component {
   }
 
   render() {
+    const vid = <video className="videobg" autoPlay loop muted src={moon}></video>
     const siteTitle = this.props.data.site.siteMetadata.title
     const siteDescription = this.props.data.site.siteMetadata.description
     const { location, children } = this.props
@@ -86,6 +88,10 @@ class Template extends React.Component {
     if (location.pathname === rootPath) {
       content = (
         <div id="wrapper">
+          {vid}
+          <script>
+              document.querySelector('video').playbackRate = 0.35;
+          </script>
           <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
           <Main
             isArticleVisible={this.state.isArticleVisible}
@@ -117,8 +123,6 @@ class Template extends React.Component {
         </Helmet>
 
         {content}
-
-        <div id="bg"></div>
       </div>
     )
   }
