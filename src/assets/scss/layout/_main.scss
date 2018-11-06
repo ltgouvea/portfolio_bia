@@ -181,12 +181,37 @@
   }
 
   .modal-carousel-container {
+    background: rgba(50, 50, 50, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    z-index: 3;
+  }
+
+  .modal-close-button {
+      z-index: 4;
+      left: 70rem;
+      position: fixed;
+  }
+
+  .slide {
+      background: none;
+  }
+
+  .thumb {
+      cursor: pointer;
+      border: none;
   }
 
   .modal-carousel {
-      width: 50rem;
-      height: 50rem;
-      z-index: 5;
+      width: 40rem;
+      height: 40rem;
   }
 
   .hidden {

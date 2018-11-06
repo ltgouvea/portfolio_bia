@@ -28,13 +28,13 @@ class Main extends React.Component {
 
   state = { showModal: false };
 
-  showModal = () => {
-    this.setState({ showModal: !this.state.showModal });
-  };
+  showModal() {
+    this.setState({ showModal: true });
+  }
 
-  hideModal = () => {
+  hideModal() {
     this.setState({ showModal: false });
-  };
+  }
 
   handleSubmit(event) {
     let rawData = event.target.elements;
@@ -52,79 +52,79 @@ class Main extends React.Component {
 
     return (
       <div id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
-      <div className="modal-carousel-container">
-        <Cmodal show={this.state.showModal}></Cmodal>
-      </div>
-
-      <article id="portfolio" className={`${this.props.article === 'portfolio' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-        <h2 className="major">Portfolio</h2>
-        <div className="albums-container">
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={img_20170731120537}/></a> </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={as_brumas_vinheta_cg2}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={as_brumas_vinheta_cg}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={bia_na_facu2_12_05_14}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={bia_na_facu3_12_05_14}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={capa3}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={chocolate}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={cítrica}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={clique_aki}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={diluna2}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={doc2}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={doc}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={em_produção_chique_demais}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={fundoclaro}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={imagem_final}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={img_4120_tentei}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={oficina}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={robes}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={rotoscopia_amanara}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={triagem}/></a>  </span>
-          </div>
-          <div className="image-card">
-              <span className="image main album-container"> <a onClick={this.showModal}><img src={triagem}/></a>  </span>
-          </div>
+        <div id="modal-wrapper" className={this.state.showModal === false ? 'hidden' : ''}>
+          <button className="modal-close-button" onClick={() => this.hideModal(this)}>X</button>
+          <Cmodal show={this.state.showModal}></Cmodal>
         </div>
-      {close}
-      </article>
+        <article id="portfolio" className={`${this.props.article === 'portfolio' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">Portfolio</h2>
+          <div className="albums-container">
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={img_20170731120537}/></a> </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={as_brumas_vinheta_cg2}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={as_brumas_vinheta_cg}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={bia_na_facu2_12_05_14}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={bia_na_facu3_12_05_14}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={capa3}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={chocolate}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={cítrica}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={clique_aki}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={diluna2}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={doc2}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={doc}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={em_produção_chique_demais}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={fundoclaro}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={imagem_final}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={img_4120_tentei}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={oficina}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={robes}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={rotoscopia_amanara}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={triagem}/></a>  </span>
+            </div>
+            <div className="image-card">
+                <span className="image main album-container"> <a onClick={() => this.showModal(this)}><img src={triagem}/></a>  </span>
+            </div>
+          </div>
+        {close}
+        </article>
 
         <article id="videos" className={`${this.props.article === 'videos' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Videos</h2>

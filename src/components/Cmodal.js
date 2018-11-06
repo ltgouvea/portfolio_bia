@@ -29,72 +29,74 @@ class Cmodal extends React.Component {
   render() {
     return (
       <div className={this.props.show === false ? 'hidden' : ''}>
-        <div className='modal-carousel'>
-          <Carousel>
-              <div className="image-carousel">
-                <img src={img_20170731120537}/>
-              </div>
-              <div className="image-carousel">
-                <img src={as_brumas_vinheta_cg2}/>
-              </div>
-              <div className="image-carousel">
-                <img src={as_brumas_vinheta_cg}/>
-              </div>
-              <div className="image-carousel">
-                <img src={bia_na_facu2_12_05_14}/>
-              </div>
-              <div className="image-carousel">
-                <img src={bia_na_facu3_12_05_14}/>
-              </div>
-              <div className="image-carousel">
-                <img src={capa3}/>
-              </div>
-              <div className="image-carousel">
-                <img src={chocolate}/>
-              </div>
-              <div className="image-carousel">
-                <img src={cítrica}/>
-              </div>
-              <div className="image-carousel">
-                <img src={clique_aki}/>
-              </div>
-              <div className="image-carousel">
-                <img src={diluna2}/>
-              </div>
-              <div className="image-carousel">
-                <img src={doc2}/>
-              </div>
-              <div className="image-carousel">
-                <img src={doc}/>
-              </div>
-              <div className="image-carousel">
-                <img src={em_produção_chique_demais}/>
-              </div>
-              <div className="image-carousel">
-                <img src={fundoclaro}/>
-              </div>
-              <div className="image-carousel">
-                <img src={imagem_final}/>
-              </div>
-              <div className="image-carousel">
-                <img src={img_4120_tentei}/>
-              </div>
-              <div className="image-carousel">
-                <img src={oficina}/>
-              </div>
-              <div className="image-carousel">
-                <img src={robes}/>
-              </div>
-              <div className="image-carousel">
-                <img src={rotoscopia_amanara}/>
-              </div>
-              <div className="image-carousel">
-                <img src={triagem}/>
-              </div>
-              <div className="image-carousel">
-                <img src={triagem}/>
-              </div>
-          </Carousel>
+        <div className="modal-carousel-container">
+          <div className='modal-carousel'>
+            <Carousel>
+                <div className="image-carousel">
+                  <img src={img_20170731120537}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={as_brumas_vinheta_cg2}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={as_brumas_vinheta_cg}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={bia_na_facu2_12_05_14}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={bia_na_facu3_12_05_14}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={capa3}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={chocolate}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={cítrica}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={clique_aki}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={diluna2}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={doc2}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={doc}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={em_produção_chique_demais}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={fundoclaro}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={imagem_final}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={img_4120_tentei}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={oficina}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={robes}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={rotoscopia_amanara}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={triagem}/>
+                </div>
+                <div className="image-carousel">
+                  <img src={triagem}/>
+                </div>
+            </Carousel>
+          </div>
         </div>
       </div>
     )

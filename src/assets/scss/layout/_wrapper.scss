@@ -27,6 +27,13 @@
 
     .videobg {
         position: fixed;
-        width: 100%;
+        width: 120vw;
+        height: 120vh;
+    }
+
+    @media only screen and (max-width: 40rem) {
+      .videobg {
+        height: 100vh
+      }
     }
   }
