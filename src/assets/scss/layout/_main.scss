@@ -153,6 +153,19 @@
       .image-card {
           width: 100%;
       }
+
+      .modal-carousel {
+          width: 20rem !important;
+          height: 30rem !important;
+      }
+
+      .thumbs-wrapper {
+          display: none;
+      }
+
+      .control-dots {
+          display: none;
+      }
   }
 
   @media only screen
