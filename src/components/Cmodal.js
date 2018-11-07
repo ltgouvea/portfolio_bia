@@ -31,7 +31,7 @@ class Cmodal extends React.Component {
       <div className={this.props.show === false ? 'hidden' : ''}>
         <div className="modal-carousel-container">
           <div className='modal-carousel'>
-            <Carousel>
+            <Carousel showStatus={false} showIndicators={false}>
                 <div className="image-carousel">
                   <img src={img_20170731120537}/>
                 </div>
